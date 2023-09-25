@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0; /* Slightly increased padding */
+    background-color: #81ecec;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centering the notes */
+}
+
+#addBtn {
+    position: fixed;
+    right: 20px; /* Increased right spacing */
+    bottom: 20px; /* Positioned at the bottom */
+    background-color: #2d3436;
+    color: white;
+    padding: 12px 20px; /* Larger padding */
+    border: 0;
+    outline: 0;
+    border-radius: 8px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addBtn:hover {
+    background-color: #222; /* Darker color on hover */
+}
+
+.note {
+    width: 300px; /* Slightly narrower notes */
+    min-height: 300px; /* Minimum height for consistency */
+    background-color: white;
+    margin: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide any overflowing content */
+}
+
+.tool {
+    width: 100%;
+    background-color: #2d3436;
+    color: white;
+    padding: 10px; /* Slightly increased padding */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tool i {
+    padding: 5px;
+    font-size: 20px; /* Larger icon size */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tool i:hover {
+    color: #c0392b; /* Red color on hover */
+}
+
+.note textarea {
+    border: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 15px; /* Increased padding */
+    font-size: 18px;
+    outline: none;
+}
+
+.note textarea:focus {
+    border: 0;
+}

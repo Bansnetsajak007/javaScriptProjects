@@ -1,0 +1,72 @@
+body{
+    background-color: #51e2f5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main{
+    /* position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px; */
+    width: 100%;
+    height: 100vh;
+    /* background-color: #3498db; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#btn{
+    margin-top: 20px;
+}
+
+
+.result_container{
+    /* margin-top: 20px;
+    position: absolute;
+    margin-left: 10px;
+    font-size: 20px; */
+
+    display: flex;
+    align-items: center;
+    /* vertically */
+    justify-content: center;
+    /* horizontally */
+    width: 1000px;
+    margin: 10px;
+    /* font-size: 40px; */
+    color: white;
+}
+
+
+/* 
+// if(! response.ok){
+    //     while(result_container.firstChild){
+    //     result_container.firstChild.remove();
+    // }
+    //     p.textContent = "OOPS city not found!!!!";
+    //     result_container.appendChild(p);
+    // }
+
+    // else{
+
+        
+    //     while(result_container.firstChild){
+    //     result_container.firstChild.remove();
+    // }
+
+
+    // console.log(weather_data);
+
+    // p.textContent = `Temperature: ${weather_data.main.temp} °C`;
+    // p2.textContent = `Humidity: ${weather_data.main.humidity} %`;
+    // p3.textContent = `Description
+    // : ${weather_data.weather[0].description
+    // } `;
+
+
+    // result_container.appendChild(p);
+    // result_container.appendChild(p2);
+    // result_container.appendChild(p3); */

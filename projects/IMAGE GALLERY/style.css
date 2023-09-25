@@ -1,0 +1,22 @@
+.image-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px; /* Adjust the gap between images as desired */
+  }
+  
+  .image_container {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 30%; /* Maintain a square aspect ratio for each image */
+  }
+  
+  .image_container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30rem;
+    height: 20rem;
+    object-fit: cover; /* Preserve the aspect ratio while filling the container */
+  }
+  

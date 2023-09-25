@@ -1,0 +1,14 @@
+h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.images img {
+    transition: transform 0.3s ease; /* Add a smooth transition for the zoom effect */
+}
+
+.images img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}

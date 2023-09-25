@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color changer app</title>
+    <style>
+        .container button {
+            color: white;
+            background-color: black;
+            /* Add any other desired styles */
+        }
+        body{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <button onclick="changeColor()" id="btn">Hover me </button> <br> <br> -->
+        <button id="btn">click me </button>
+
+    </div>
+
+    <script>
+      
+    document.addEventListener("DOMContentLoaded", function() {
+      
+  const button = document.getElementById("btn");
+  const mode = document.body.style;
+
+  function changebg(e) {
+    console.log(e.type);
+    if (mode.backgroundColor === "white") {
+      mode.backgroundColor = 'black';
+    } else {
+      mode.backgroundColor = 'white';
+    }
+  }
+
+  button.addEventListener("click", changebg);
+});
+
+   
+    </script>
+</body>
+</html>

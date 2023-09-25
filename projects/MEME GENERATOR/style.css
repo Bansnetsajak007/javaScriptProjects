@@ -1,0 +1,25 @@
+body{
+    background-color: skyblue;
+}
+
+
+.container{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.container img {
+    height: 250px;
+    object-fit: cover;
+}
+
+#generate{
+    padding: 8px 20px;
+    border: 2px solid  #964249 ;
+    margin: 24px 0;
+    font-size: 20px;
+    color: white;
+    background: #964249;
+    cursor: pointer;
+    transition: all 400ms ease;
+}

@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: linear-gradient(to bottom right, red , blue);
+    background-image: linear-gradient(to bottom right, green , grey);
     min-height: 100vh;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;

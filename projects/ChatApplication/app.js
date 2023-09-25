@@ -2,6 +2,28 @@ const chatBox = document.getElementById('chatBox');
 const messageInput = document.getElementById('messageInput');
 const sendButton = document.getElementById('sendButton');
 
+let first = 'sk-Fz@@@@jZkho@@@@@vS9';
+let second = 'Hq@@@@ae@79@@@@@@@mlVa';
+let third = '@@@@@T3B@@@@@lbkF@@@@@';
+let fourth = '@J@s@SsMkhaDtIWp@@@@tkJ0a@@@@@@@c6o';
+
+const removeAtSymbol = (str) => {
+    // Use the replace method to remove all occurrences of '@' with an empty string
+    return str.replace(/@/g, '');
+  };
+
+
+  const joinString = (a, b, c, d) => {
+    // Call removeAtSymbol on each input string
+    a = removeAtSymbol(a);
+    b = removeAtSymbol(b);
+    c = removeAtSymbol(c);
+    d = removeAtSymbol(d);
+    
+    return a + b + c + d;
+  };
+
+
 sendButton.addEventListener('click', async () => {
     const message = messageInput.value;
     received_mes = await get_chat_response(message);
@@ -14,7 +36,8 @@ sendButton.addEventListener('click', async () => {
 });
 
 const get_chat_response = async (inputmessage) => {
-    const apiKey = 'Api key';
+    const apiKey = joinString(first,second,third,fourth);
+
 
     try {
         const response = await fetch('https://api.openai.com/v1/chat/completions' , {

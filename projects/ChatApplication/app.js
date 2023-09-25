@@ -14,7 +14,7 @@ sendButton.addEventListener('click', async () => {
 });
 
 const get_chat_response = async (inputmessage) => {
-    const apiKey = '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';
+    const apiKey = 'Api key';
 
     try {
         const response = await fetch('https://api.openai.com/v1/chat/completions' , {

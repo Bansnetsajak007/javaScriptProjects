@@ -1,2 +1,3 @@
 # javaScriptProjects
-Simple Projects made using Javascript
+
+![alt text](assets/projectimg/readmeimg.png)

@@ -1,8 +1,49 @@
-.work {
-    /* border: 2px solid black; */
+/* .work {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-}
+} */
+
+/* Style the input and buttons */
+input[type="text"] {
+    width: 70%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #007BFF;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the delete button */
+  .delete-button {
+    padding: 6px 12px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff4d4d;
+  }
+  
+  
+  

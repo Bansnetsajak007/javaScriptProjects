@@ -55,6 +55,7 @@ function storeTasks() {
 function displayTasks() {
     // Retrieve the stored tasks from localStorage
     const storedItems = localStorage.getItem("todoItems");
+    // console.log(storedItems);
     const resultContainer = document.getElementById("result");
 
     // Clear the result container

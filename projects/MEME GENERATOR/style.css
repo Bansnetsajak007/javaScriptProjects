@@ -1,11 +1,17 @@
-body{
+
+body {
     background-color: skyblue;
 }
 
-
-.container{
+.container {
     font-family: "Roboto", sans-serif;
     text-align: center;
+}
+
+
+.container img#Meme {
+    height: 200px;
+    width: 200px;
 }
 
 .container img {
@@ -13,9 +19,9 @@ body{
     object-fit: cover;
 }
 
-#generate{
+#generate {
     padding: 8px 20px;
-    border: 2px solid  #964249 ;
+    border: 2px solid #964249;
     margin: 24px 0;
     font-size: 20px;
     color: white;

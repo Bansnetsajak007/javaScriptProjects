@@ -10,18 +10,14 @@ const update_meme = (meme_url) => {
 
 const get_meme = async () => {
     try {
-        const response = await fetch("https://meme-api.com/gimme/wholesomememes");
+        const response = await fetch("https://busy-gray-octopus-tux.cyclic.app/memes");
         const data = await response.json();
-        update_meme(data.url);
+        update_meme(data.imageUrl);
 
     } catch (error) {
         console.log("Error fetching the data!!");
     }
 
-    //will execute anyhow
-    finally{
-        console.log("promise resolved!!")
-    }
 }
 
 generate_btn.addEventListener('click', ()=> {
